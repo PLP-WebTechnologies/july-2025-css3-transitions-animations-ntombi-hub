@@ -1,0 +1,57 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Part 1: Button Hover Animation */
+.animated-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Part 2: Calculator Section */
+.calculator input {
+  margin: 5px;
+  padding: 8px;
+  width: 150px;
+}
+
+.calculator button {
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+
+/* Part 3: Box Animation */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+/* Animation class added by JS */
+.animate {
+  animation: bounce 1s ease forwards;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
